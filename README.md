@@ -1,6 +1,6 @@
 -   __compare_fits.R__: fits normal, log-normal and gamma distribution to the SI
 
--   __compare_trends.R__: pairwise difference in the mean SI by LHS
+-   __compare_trends.R__: pairwise difference in the mean SI by VOCs
 
 -   __ecdf.R__: posterior cumulative distribution of the SI
 
