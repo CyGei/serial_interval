@@ -1,55 +1,55 @@
--   \*\*compare_fits.R\*\* : fits normal, log-normal and gamma distribution to the SI
+-   __compare_fits.R__: fits normal, log-normal and gamma distribution to the SI
 
--   \*\*compare_trends.R\*\* : pairwise difference in the mean SI by LHS
+-   __compare_trends.R__: pairwise difference in the mean SI by LHS
 
--   \*\*ecdf.R\*\* : posterior cumulative distribution of the SI
+-   __ecdf.R__: posterior cumulative distribution of the SI
 
--   \*\*epicurve.R\*\* : epidemic curve, cumulative incidence, vaccine intake of the Virus Watch cohort
+-   __epicurve.R__: epidemic curve, cumulative incidence, vaccine intake of the Virus Watch cohort
 
--   \*\*fira_theme.R\*\* : ggplot style from the "fira_theme" R package (<https://github.com/vankesteren/firatheme>)
+-   __fira_theme.R__: ggplot style from the "fira_theme" R package (<https://github.com/vankesteren/firatheme>)
 
--   \*\*fit_disc.R\*\* : fits discrete distributions to non-zero observations
+-   __fit_disc.R__: fits discrete distributions to non-zero observations
 
--   \*\*fitted_SI.R\*\* : distribution parameters for the SI interval
+-   __fitted_SI.R__: distribution parameters for the SI interval
 
--   \*\*functions.R\*\* : helper functions for the analysis
+-   __functions.R__: helper functions for the analysis
 
--   \*\*gamma_fits.R\*\* : fitted gamma parameters
+-   __gamma_fits.R__: fitted gamma parameters
 
--   \*\*LHS.R\*\* : Latin Hypercube Sampling functions
+-   __LHS.R__: Latin Hypercube Sampling functions
 
--   \*\*LHS_plot.R\*\* : Plots the input distributions
+-   __LHS_plot.R__: Plots the input distributions
 
--   \*\*LHS_sanity_check.R\*\* : Compares the mean SI by VOCs for a single LHS input
+-   __LHS_sanity_check.R__: Compares the mean SI by VOCs for a single LHS input
 
--   \*\*libraries.R\*\* : loads R packages
+-   __libraries.R__: loads R packages
 
--   \*\*load.R\*\* : loads the VirusWatch data
+-   __load.R__: loads the VirusWatch data
 
--   \*\*master.R\*\* : master file running the whole analysis
+-   __master.R__: master file running the whole analysis
 
--   \*\*misc.R\*\* : loads outputs from the analysis
+-   __misc.R__: loads outputs from the analysis
 
--   \*\*naive_models.R\*\* : theoretical vs pairwise vs outbreaker2 model
+-   __naive_models.R__: theoretical vs pairwise vs outbreaker2 model
 
--   \*\*outbreaker_future_groups2.R\*\* : runs outbreaker2 for households in parallel using the "future" R package
+-   __outbreaker_future_groups2.R__: runs outbreaker2 for households in parallel using the "future" R package
 
--   \*\*pairwise.R\*\* : pairwise model computing the SI solely from the data
+-   __pairwise.R__: pairwise model computing the SI solely from the data
 
--   \*\*plot_densities.R\*\* : plots the densities for the mean estimate & 95% credible interval
+-   __plot_densities.R__: plots the densities for the mean estimate & 95% credible interval
 
--   \*\*posterior_mean_sd.R\*\* : estimates of the mean SI (sd), including observations at 0
+-   __posterior_mean_sd.R__: estimates of the mean SI (sd), including observations at 0
 
--   \*\*results.R\*\* : prints key results from the analysis
+-   __results.R__: prints key results from the analysis
 
--   \*\*same_date_si.R\*\* : computes the posterior sample for the households that report the same symptom onset date
+-   __same_date_si.R__: computes the posterior sample for the households that report the same symptom onset date
 
--   \*\*save_input_data.R\*\* : saves input data for the model
+-   __save_input_data.R__: saves input data for the model
 
--   \*\*serial interval.Rproj\*\* : Rproject file
+-   __serial interval.Rproj__: Rproject file
 
--   \*\*SI.R\*\*: extracts the serial interval
+-   __SI.R__: extracts the serial interval
 
--   \*\*table_demographics.R\*\* : produces descriptive table
+-   __table_demographics.R__: produces descriptive table
 
--   \*\*truncation.R\*\* : % of values lost from truncating the SI
+-   __truncation.R__: % of values lost from truncating the SI
