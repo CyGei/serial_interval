@@ -1,55 +1,65 @@
--   __compare_fits.R__: fits normal, log-normal and gamma distribution to the SI
+# **Analysis Description** 
 
--   __compare_trends.R__: pairwise difference in the mean SI by VOCs
+This repository contains the code for the main analysis conducted to estimate the serial interval of different SARS-CoV-2 variants while accounting for negative serial intervals. The analysis utilises a Bayesian framework to infer transmission pairs and explores all possible transmission trees based on observed symptom dates ([outbreaker2](https://github.com/reconhub/outbreaker2)). The code in this repository performs various tasks related to the analysis, including generating Latin Hypercube Samples, reconstructing transmission chains, fitting distributions, comparing trends, computing posterior cumulative distributions, generating epidemic curves, and more.
 
--   __ecdf.R__: posterior cumulative distribution of the SI
+# Reproducibility
 
--   __epicurve.R__: epidemic curve, cumulative incidence, vaccine intake of the Virus Watch cohort
+For a reproducible example of our methods, we recommend visiting the [**SI_simulation repository**](https://github.com/CyGei/SI_simulation). This repository contains code that utilises simulated data, which allows for a complete replication of our analysis. Please note that due to restrictions on sharing patient data, we are unable to publicly provide the actual patient data used in our study.
 
--   __fira_theme.R__: ggplot style from the "fira_theme" R package (<https://github.com/vankesteren/firatheme>)
+# File Descriptions 
 
--   __fit_disc.R__: fits discrete distributions to non-zero observations
+`compare_fits.R`: Fits normal, log-normal, and gamma distributions to the serial interval data.
 
--   __fitted_SI.R__: distribution parameters for the SI interval
+`compare_trends.R`: Calculates pairwise differences in the mean serial interval by variants of concern (VOCs).
 
--   __functions.R__: helper functions for the analysis
+`ecdf.R`: Computes the posterior cumulative distribution of the serial interval.
 
--   __gamma_fits.R__: fitted gamma parameters
+`epicurve.R`: Generates an epidemic curve, cumulative incidence, and vaccine intake plot for the Virus Watch cohort.
 
--   __LHS.R__: Latin Hypercube Sampling functions
+`fira_theme.R`: Applies the "fira_theme" ggplot style from the "firatheme" R package.
 
--   __LHS_plot.R__: Plots the input distributions
+`fit_disc.R`: Fits discrete distributions to non-zero observations.
 
--   __LHS_sanity_check.R__: Compares the mean SI by VOCs for a single LHS input
+`fitted_SI.R`: Computes distribution parameters for the serial interval.
 
--   __libraries.R__: loads R packages
+`functions.R`: Contains helper functions used in the analysis.
 
--   __load.R__: loads the VirusWatch data
+`gamma_fits.R`: Computes fitted gamma distribution parameters.
 
--   __master.R__: master file running the whole analysis
+`LHS.R`: Includes Latin Hypercube Sampling functions.
 
--   __misc.R__: loads outputs from the analysis
+`LHS_plot.R`: Plots the input distributions for Latin Hypercube Sampling.
 
--   __naive_models.R__: theoretical vs pairwise vs outbreaker2 model
+`LHS_sanity_check.R`: Compares the mean serial interval by VOCs for a single Latin Hypercube Sampling input.
 
--   __outbreaker_future_groups2.R__: runs outbreaker2 for households in parallel using the "future" R package
+`libraries.R`: Loads required R packages.
 
--   __pairwise.R__: pairwise model computing the SI solely from the data
+`load.R:` Loads the VirusWatch data (note that for data privacy and security reasons we cannot publicly share the data, please contact the authors).
 
--   __plot_densities.R__: plots the densities for the mean estimate & 95% credible interval
+`master.R`: Serves as the main file that runs the entire analysis.
 
--   __posterior_mean_sd.R__: estimates of the mean SI (sd), including observations at 0
+`misc.R`: Loads outputs from the analysis (note that for data privacy and security reasons we cannot publicly share the data, please contact the authors).
 
--   __results.R__: prints key results from the analysis
+`naive_models.R`: Compares theoretical, pairwise, and outbreaker2 models.
 
--   __same_date_si.R__: computes the posterior sample for the households that report the same symptom onset date
+`outbreaker_future_groups2.R`: Runs outbreaker2 for households in parallel using the "future" R package.
 
--   __save_input_data.R__: saves input data for the model
+`pairwise.R`: Implements the pairwise model to compute the serial interval solely from the data.
 
--   __serial interval.Rproj__: Rproject file
+`plot_densities.R`: Plots the densities for the mean estimate and 95% credible interval.
 
--   __SI.R__: extracts the serial interval
+`posterior_mean_sd.R`: Estimates the mean serial interval (and standard deviation) including observations at zero.
 
--   __table_demographics.R__: produces descriptive table
+`results.R`: Prints key results from the analysis.
 
--   __truncation.R__: % of values lost from truncating the SI
+`same_date_si.R`: Computes the posterior sample for households reporting the same symptom onset date.
+
+`save_input_data.R`: Saves input data for the model.
+
+`serial_interval.Rproj`: Rproject file for the analysis.
+
+`SI.R`: Extracts the serial interval.
+
+`table_demographics.R`: Produces a descriptive table.
+
+`truncation.R`: Computes the percentage of values lost from truncating the serial interval.
