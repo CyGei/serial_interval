@@ -1,4 +1,4 @@
-# **Analysis Description** 
+# **Analysis Description**
 
 This repository contains the code for the main analysis conducted to estimate the serial interval of different SARS-CoV-2 variants while accounting for negative serial intervals. The analysis utilises a Bayesian framework to infer transmission pairs and explores all possible transmission trees based on observed symptom dates ([outbreaker2](https://github.com/reconhub/outbreaker2)). The code in this repository performs various tasks related to the analysis, including generating Latin Hypercube Samples, reconstructing transmission chains, fitting distributions, comparing trends, computing posterior cumulative distributions, generating epidemic curves, and more.
 
@@ -6,7 +6,7 @@ This repository contains the code for the main analysis conducted to estimate th
 
 For a reproducible example of our methods, we recommend visiting the [**SI_simulation repository**](https://github.com/CyGei/SI_simulation). This repository contains code that utilises simulated data, which allows for a complete replication of our analysis. Please note that due to restrictions on sharing patient data, we are unable to publicly provide the actual patient data used in our study.
 
-# File Descriptions 
+# File Descriptions
 
 `compare_fits.R`: Fits normal, log-normal, and gamma distributions to the serial interval data.
 
@@ -50,7 +50,13 @@ For a reproducible example of our methods, we recommend visiting the [**SI_simul
 
 `posterior_mean_sd.R`: Estimates the mean serial interval (and standard deviation) including observations at zero.
 
+`posterior_truncation.R` : pre-processing of the results to remove households with only 2 cases that are too far apart to be related.
+
+`regression.R` : Regression analysis for Appendix C: effects of the natural histories moments on the mean & sd of the adjusted serial interval.
+
 `results.R`: Prints key results from the analysis.
+
+`Rhat.R` : Computes the Rhat value on the log posterior chains.
 
 `same_date_si.R`: Computes the posterior sample for households reporting the same symptom onset date.
 
